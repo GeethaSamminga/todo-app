@@ -50,7 +50,6 @@ try{
 
     if(!task) return next(new ErrorHandler("Task not found",404));
     
-   
        task.iscompleted=!task.iscompleted;
        await task.save();
    
